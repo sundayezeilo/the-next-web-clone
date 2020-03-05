@@ -4,29 +4,49 @@
 
 /* HEADER */
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 108px;
+}
+
+/* MAIN */
+main {
+  padding-top: 108px;
+}
+
 /* COVER SECTION */
 
 .cover-section {
-  height: 200px;
+  height: calc(100vh - 108px);
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  /* grid-template-columns: 2fr 1fr; */
 }
 
 .cover-main-item {
-  grid-row: span 2;
+  /* grid-row: span 2; */
 }
 
 /* LATEST NEWS SECTION AND LATEST DEALS SECTION GRID */
 
 .latest-grid {
-  height: 200px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(4, 1fr); */
+}
+
+.latest-item {
+  height: 88px;
+  /* image should have 75x75px */
 }
 
 /* LATEST NEWS SECTION */
 
 /* LATEST FUNDING SECTION */
+
+.latest-funding-section {
+  height: 880px;
+}
 
 /* CATEGORIES SECTION */
 
@@ -40,5 +60,7 @@
 
 /* FOOTER */
 
-
-
+.hidden {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+}

@@ -47,12 +47,30 @@ main {
   /* image should have 75x75px */
 }
 
+@media screen and (min-width: 768px) {
+  .latest-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .latest-grid > .section-heading {
+    grid-column: span 3;
+  }
+}
+
 /* LATEST NEWS SECTION */
 
 /* LATEST FUNDING SECTION */
 
 .latest-funding-section {
-  height: 880px;
+  background-color: gray;
+}
+
+.latest-funding-item {
+  height: 246px;
+}
+
+.latest-funding-item:last-child {
+  display: none;
 }
 
 /* CATEGORIES SECTION */
@@ -60,10 +78,20 @@ main {
 .categories-section {
   display: grid;
   background-color: rosybrown;
-  /* grid-template-columns: repeat(3, 1fr); */
+}
+
+@media screen and (min-width: 768px) {
+  .categories-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* LATEST DEALS SECTION */
+
+.all-deals-link {
+  position: absolute;
+  right: 0;
+}
 
 /* FOOTER */
 

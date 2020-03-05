@@ -2,11 +2,43 @@
     border: 1px solid red;
 }
 
+/* HEADER */
+
+/* COVER SECTION */
+
 .cover-section {
-    width: 100%;
-    height: 200px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr 1fr;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
+
+.cover-main-item {
+  grid-row: span 2;
+}
+
+/* LATEST NEWS SECTION AND LATEST DEALS SECTION GRID */
+
+.latest-grid {
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* LATEST NEWS SECTION */
+
+/* LATEST FUNDING SECTION */
+
+/* CATEGORIES SECTION */
+
+.categories-section {
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* LATEST DEALS SECTION */
+
+/* FOOTER */
+
+
 

@@ -5,10 +5,12 @@
 /* HEADER */
 
 header {
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   height: 108px;
+  background-color: #444;
 }
 
 /* MAIN */
@@ -24,8 +26,13 @@ main {
   /* grid-template-columns: 2fr 1fr; */
 }
 
-.cover-main-item {
-  /* grid-row: span 2; */
+@media screen and (min-width: 768px) {
+  .cover-section {
+    grid-template-columns: 2fr 1fr;
+  }
+  .cover-main-item {
+    grid-row: span 2;
+  }
 }
 
 /* LATEST NEWS SECTION AND LATEST DEALS SECTION GRID */
@@ -51,14 +58,19 @@ main {
 /* CATEGORIES SECTION */
 
 .categories-section {
-  height: 200px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  background-color: rosybrown;
+  /* grid-template-columns: repeat(3, 1fr); */
 }
 
 /* LATEST DEALS SECTION */
 
 /* FOOTER */
+
+footer {
+    height: 280px;
+    background-color: #000;
+}
 
 .hidden {
 	position: absolute;

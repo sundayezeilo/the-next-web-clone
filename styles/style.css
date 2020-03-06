@@ -51,6 +51,20 @@ nav {
     display: block;
     height: 32px;
   }
+
+  .menu-bar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  nav {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-img {
+    display: none;
+  }
 }
 
 /* MAIN */
@@ -92,8 +106,18 @@ main {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .latest-grid > .section-heading {
+  .section-heading {
     grid-column: span 3;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .latest-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .section-heading {
+    grid-column: span 4;
   }
 }
 
@@ -123,6 +147,15 @@ main {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .latest-funding-nav {
+    grid-column: span 4;
+  }
+  .latest-funding-item:last-child {
+    display: block;
+  }
+}
+
 /* CATEGORIES SECTION */
 
 .categories-section {
@@ -141,12 +174,6 @@ main {
 .latest-deals-heading {
   display: flex;
   justify-content: space-between;
-}
-
-@media screen and (min-width: 768px) {
-  .latest-deals-heading {
-    grid-column: span 3;
-  }
 }
 
 /* FOOTER */

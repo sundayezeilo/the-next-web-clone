@@ -190,18 +190,25 @@ main {
 .cover-item {
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/belching-black-hole-796x450.jpg");
+  background-position: center center;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Snag_1094152b-796x407.png");
 }
 
 @media screen and (min-width: 768px) {
   .cover-section {
-    height: 75vh;
+    height: 60vh;
     max-height: 560px;
     grid-template-columns: 2fr 1fr;
   }
 
   .cover-main-item {
     grid-row: span 2;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cover-section {
+    height: 75vh;
   }
 }
 

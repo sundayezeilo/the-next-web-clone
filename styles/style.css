@@ -48,8 +48,24 @@ nav {
   }
 
   .sub-nav {
-    display: block;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0 20px 0 8px;
+    justify-content: space-between;
+    background-color: #131313;
     height: 32px;
+  }
+
+  .sub-nav a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .left-sub-nav li, .right-sub-nav li {
+    display: inline;
+    margin-left: 12px;
   }
 
   .menu-bar {
@@ -166,6 +182,12 @@ main {
 @media screen and (min-width: 768px) {
   .categories-section {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .categories-section {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

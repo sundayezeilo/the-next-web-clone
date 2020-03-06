@@ -88,7 +88,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  border: 1px solid red;
   font-size: 100%;
   vertical-align: baseline;
   box-sizing: border-box;
@@ -127,7 +126,7 @@ blockquote::before,
 blockquote::after,
 q::before,
 q::after {
-  content: '';
+  content: "";
   content: none;
 }
 

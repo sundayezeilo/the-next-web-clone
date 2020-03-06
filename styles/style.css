@@ -1,5 +1,13 @@
-* {
-    border: 1px solid red;
+@font-face {
+  font-family: "ARS Maquette";
+  src: url("../fonts/ARSMaquettePro.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Shentox";
+  src: url("../fonts/Shentox.ttf");
+  font-weight: normal;
 }
 
 /* HEADER */
@@ -10,7 +18,6 @@ header {
   top: 0;
   left: 0;
   height: 108px;
-  background-color: #444;
 }
 
 nav {
@@ -21,9 +28,15 @@ nav {
 
 .logo-img {
   width: 106px;
+  background-color: #f42;
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
 }
 
 .sub-nav {
+  display: none;
+}
+
+.main-nav-links {
   display: none;
 }
 
@@ -38,6 +51,11 @@ nav {
   display: inline-block;
 }
 
+.nav-ads {
+  background-color: #FFDE3E;
+  height: 60px;
+}
+
 @media screen and (min-width: 768px) {
   nav {
     height: 80px;
@@ -50,12 +68,13 @@ nav {
   .sub-nav {
     display: flex;
     align-items: center;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     padding: 0 20px 0 8px;
     justify-content: space-between;
     background-color: #131313;
     height: 32px;
+    font-family: "ARS Maquette", Helvetica, sans-serif;
   }
 
   .sub-nav a {
@@ -63,17 +82,42 @@ nav {
     color: rgba(255, 255, 255, 0.6);
   }
 
-  .left-sub-nav li, .right-sub-nav li {
+  .left-sub-nav li,
+  .right-sub-nav li {
     display: inline;
-    margin-left: 12px;
+    margin-left: 10px;
+  }
+
+  .main-nav {
+    font-size: 13px;
+    padding-left: 10px;
+    font-family: "Shentox", Helvetica, sans-serif;
+  }
+
+  .main-nav-links li {
+    display: inline;
+    padding: 0 10px;
+  }
+
+  .main-nav-links a {
+    text-decoration: none;
+    color: #aaa;
+  }
+
+  .main-nav-links .hidden-nav-link {
+    display: none;
   }
 
   .menu-bar {
     display: none;
   }
+
+  .nav-ads {
+    height: 30px;
+  }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
   nav {
     grid-template-columns: 1fr;
   }
@@ -93,13 +137,13 @@ main {
 .cover-section {
   height: calc(100vh - 108px);
   display: grid;
-  /* grid-template-columns: 2fr 1fr; */
 }
 
 @media screen and (min-width: 768px) {
   .cover-section {
     grid-template-columns: 2fr 1fr;
   }
+
   .cover-main-item {
     grid-row: span 2;
   }
@@ -109,7 +153,6 @@ main {
 
 .latest-grid {
   display: grid;
-  /* grid-template-columns: repeat(4, 1fr); */
 }
 
 .latest-item {
@@ -167,6 +210,7 @@ main {
   .latest-funding-nav {
     grid-column: span 4;
   }
+
   .latest-funding-item:last-child {
     display: block;
   }
@@ -201,11 +245,11 @@ main {
 /* FOOTER */
 
 footer {
-    height: 280px;
-    background-color: #000;
+  height: 280px;
+  background-color: #000;
 }
 
 .hidden {
-	position: absolute;
-	clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
 }

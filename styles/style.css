@@ -29,26 +29,43 @@ nav {
 .logo-img {
   width: 106px;
   background-color: #f42;
-    background: linear-gradient(to bottom right,#c09,#f42 85%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right,#c09,#f42 85%);
+}
+
+.logo-img img {
+  width: 66px;
+  height: 16px;
 }
 
 .sub-nav {
   display: none;
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .main-nav-links {
   display: none;
 }
 
-.main-nav-buttons {
-  float: right;
+.main-nav-icons {
   height: 48px;
 }
 
-.nav-button {
+.nav-icon {
   width: 48px;
   height: 100%;
   display: inline-block;
+  line-height: 48px;
+  text-align: center;
+  border-left: 1px solid #aaa;
+  text-decoration: none;
 }
 
 .nav-ads {
@@ -89,9 +106,14 @@ nav {
   }
 
   .main-nav {
+    justify-content: space-between;
     font-size: 13px;
     padding-left: 10px;
     font-family: "Shentox", Helvetica, sans-serif;
+  }
+
+  .main-nav-links {
+    display: block;
   }
 
   .main-nav-links li {

@@ -18,6 +18,7 @@ header {
   top: 0;
   left: 0;
   height: 108px;
+  font-family: "ARS Maquette", Helvetica, sans-serif;
 }
 
 nav {
@@ -45,6 +46,7 @@ nav {
 }
 
 .main-nav {
+  background-color: #fcfcfc;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -55,22 +57,35 @@ nav {
 }
 
 .main-nav-icons {
+  display: flex;
   height: 48px;
 }
 
 .nav-icon {
   width: 48px;
   height: 100%;
-  display: inline-block;
-  line-height: 48px;
-  text-align: center;
-  border-left: 1px solid #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #eee;
   text-decoration: none;
+  color: #aaa;
+  font-size: 18px;
+}
+
+.menu-bar {
+  color: #f42;
 }
 
 .nav-ads {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #FFDE3E;
+  text-decoration: none;
+  color: #000;
   height: 60px;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -91,7 +106,6 @@ nav {
     justify-content: space-between;
     background-color: #131313;
     height: 32px;
-    font-family: "ARS Maquette", Helvetica, sans-serif;
   }
 
   .sub-nav a {
@@ -135,7 +149,9 @@ nav {
   }
 
   .nav-ads {
+    justify-content: flex-start;
     height: 30px;
+    padding: 0 126px;
   }
 }
 
@@ -146,6 +162,14 @@ nav {
 
   .logo-img {
     display: none;
+  }
+
+  .main-nav-links .hidden-nav-link {
+    display: inline;
+  }
+
+  .nav-ads {
+    padding: 0 20px;
   }
 }
 

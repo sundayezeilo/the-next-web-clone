@@ -13,6 +13,20 @@ header {
   background-color: #444;
 }
 
+.main-nav {  height: 48px;
+
+}
+
+.main-nav-buttons {
+  float: right;
+}
+
+.nav-button {
+  height: 100%;
+  display: inline-block;
+  width: 48px;
+}
+
 /* MAIN */
 main {
   padding-top: 108px;
@@ -73,6 +87,16 @@ main {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .latest-funding-nav {
+    grid-column: span 3;
+  }
+
+  .latest-funding-nav li {
+    display: inline;
+  }
+}
+
 /* CATEGORIES SECTION */
 
 .categories-section {
@@ -88,9 +112,15 @@ main {
 
 /* LATEST DEALS SECTION */
 
-.all-deals-link {
-  position: absolute;
-  right: 0;
+.latest-deals-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .latest-deals-heading {
+    grid-column: span 3;
+  }
 }
 
 /* FOOTER */

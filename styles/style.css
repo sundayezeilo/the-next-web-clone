@@ -183,10 +183,20 @@ main {
 .cover-section {
   height: calc(100vh - 108px);
   display: grid;
+  grid-gap: 8px;
+  padding: 0 8px;
+}
+
+.cover-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/belching-black-hole-796x450.jpg");
 }
 
 @media screen and (min-width: 768px) {
   .cover-section {
+    height: 75vh;
+    max-height: 560px;
     grid-template-columns: 2fr 1fr;
   }
 

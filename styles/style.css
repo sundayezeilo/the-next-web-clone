@@ -13,23 +13,49 @@ header {
   background-color: #444;
 }
 
-.main-nav {  height: 48px;
+nav {
+  height: 48px;
+  display: grid;
+  grid-template-columns: 106px 1fr;
+}
 
+.logo-img {
+  width: 106px;
+}
+
+.sub-nav {
+  display: none;
 }
 
 .main-nav-buttons {
   float: right;
+  height: 48px;
 }
 
 .nav-button {
+  width: 48px;
   height: 100%;
   display: inline-block;
-  width: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    height: 80px;
+  }
+
+  .logo-img {
+    grid-row: span 2;
+  }
+
+  .sub-nav {
+    display: block;
+    height: 32px;
+  }
 }
 
 /* MAIN */
 main {
-  padding-top: 108px;
+  padding-top: 104px;
 }
 
 /* COVER SECTION */

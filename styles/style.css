@@ -264,6 +264,10 @@ main {
 
 /* LATEST NEWS SECTION AND LATEST DEALS SECTION GRID */
 
+.latest-news-section .section-heading {
+  margin-bottom: 24px;
+}
+
 .latest-grid {
   display: grid;
   padding: 0 20px;
@@ -302,7 +306,6 @@ main {
   color: #f42;
   font-weight: bold;
   cursor: pointer;
-  margin-bottom: 24px;
 }
 
 .section-heading:hover {
@@ -334,7 +337,20 @@ main {
 /* LATEST FUNDING SECTION */
 
 .latest-funding-section {
-  
+
+}
+
+.latest-funding-nav-list {
+  margin-bottom: 14px;
+}
+
+.latest-funding-nav-list li {
+  margin-top: 14px;
+}
+
+.funding-nav-link {
+  color: #f42;
+  font-size: 1.3rem;
 }
 
 .latest-funding-item {
@@ -343,6 +359,11 @@ main {
 
 .latest-funding-item:last-child {
   display: none;
+}
+
+.funding-image {
+  width: 60px;
+  height: 60px;
 }
 
 @media screen and (min-width: 768px) {

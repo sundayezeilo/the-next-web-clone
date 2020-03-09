@@ -5,6 +5,12 @@
 }
 
 @font-face {
+  font-family: "ARS Maquette";
+  src: url("../fonts/ARSMaquettePro-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
   font-family: "Shentox";
   src: url("../fonts/Shentox.ttf");
   font-weight: normal;
@@ -35,6 +41,7 @@ header {
   left: 0;
   height: 108px;
   font-family: "ARS Maquette", Helvetica, sans-serif;
+  z-index: 1;
 }
 
 nav {
@@ -355,6 +362,9 @@ main {
 
 .latest-funding-item {
   height: 246px;
+  background-color: #FFFAF8;
+  color: #555;
+  margin: 8px 0;
 }
 
 .funding-heading-container {
@@ -401,6 +411,27 @@ main {
   position: absolute;
 }
 
+.funding-list {
+  padding: 16px;
+  font-size: 1.3rem;
+  line-height: 3rem;
+}
+
+.funding-list i {
+  font-size: 1.8rem;
+  color: #000;
+  padding-right: 8px;
+}
+
+.funding-item-paragraph {
+  padding: 16px;
+  border-top: 1px solid rgba(255,68,34,.25);
+}
+
+.funding-item-paragraph span {
+  color: #aaa;
+}
+
 @media screen and (min-width: 768px) {
   .latest-funding-nav {
     grid-column: span 3;
@@ -445,6 +476,10 @@ main {
 .latest-deals-heading {
   display: flex;
   justify-content: space-between;
+}
+
+.sale-discount-box {
+  display: none;
 }
 
 /* FOOTER */

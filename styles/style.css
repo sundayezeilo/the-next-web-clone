@@ -211,7 +211,20 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Snag_1094152b-796x407.png");
+  /* background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Snag_1094152b-796x407.png"); */
+  padding: 14px 12px;
+}
+
+.cover-main-item {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Copy-of-...-1-796x417.png");
+}
+
+.cover-second-item {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/TNW-Conference-PanelImg.jpg");
+}
+
+.cover-third-item {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design7-796x417.png");
 }
 
 .cover-item h2 {
@@ -220,8 +233,15 @@ main {
 }
 
 .cover-item h3 {
-  font-size: 1.3rem;
+  font-size: 2.0rem;
+  margin: 5px 0;
   font-family: "Avalon", Helvetica, sans-serif;
+}
+
+.cover-item p {
+  font-size: 1.2rem;
+  font-family: "ARS Maquette", Helvetica, sans-serif;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 @media screen and (min-width: 768px) {
@@ -251,6 +271,13 @@ main {
 .latest-item {
   height: 88px;
   /* image should have 75x75px */
+}
+
+.section-heading {
+  font-size: 2.7rem;
+  font-family: "Avalon", Helvetica, sans-serif;
+  color: #f42;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {

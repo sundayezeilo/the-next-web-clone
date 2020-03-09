@@ -10,6 +10,22 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "Avalon";
+  src: url("../fonts/Avalon.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Avalon";
+  src: url("../fonts/Avalon_Bold.ttf");
+  font-weight: bold;
+}
+
+html {
+  font-size: 62.5%; /* Only for convenient using of rem similar to px (1.6rem = 16px) */
+}
+
 /* HEADER */
 
 header {
@@ -185,13 +201,27 @@ main {
   display: grid;
   grid-gap: 8px;
   padding: 0 8px;
+  color: #fff;
 }
 
 .cover-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Snag_1094152b-796x407.png");
+}
+
+.cover-item h2 {
+  font-size: 1.3rem;
+  font-family: "Shentox", Helvetica, sans-serif;
+}
+
+.cover-item h3 {
+  font-size: 1.3rem;
+  font-family: "Avalon", Helvetica, sans-serif;
 }
 
 @media screen and (min-width: 768px) {

@@ -336,10 +336,6 @@ main {
 
 /* LATEST FUNDING SECTION */
 
-.latest-funding-section {
-
-}
-
 .latest-funding-nav-list {
   margin-bottom: 14px;
 }
@@ -353,17 +349,50 @@ main {
   font-size: 1.3rem;
 }
 
+.funding-nav-link:hover {
+  color: #000;
+}
+
 .latest-funding-item {
   height: 246px;
 }
+
+.funding-heading {
+  background-color: #f42;
+  color: #fff;
+  line-height: 44px;
+  padding-left: 70px;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.funding-sub-heading {
+  background-color: rgba(255,68,34,.08);
+  height: 60px;
+  padding-left: 70px;
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.funding-serie {
+  font-size: 1.1rem;
+  margin-top: 4px;
+  color: #777;
+  font-family: "Shentox", Helvetica, sans-serif;
+} 
 
 .latest-funding-item:last-child {
   display: none;
 }
 
 .funding-image {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (min-width: 768px) {

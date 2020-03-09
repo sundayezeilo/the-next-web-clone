@@ -266,18 +266,47 @@ main {
 
 .latest-grid {
   display: grid;
+  padding: 0 20px;
+  margin-top: 20px;
+  font-family: "ARS Maquette", Helvetica, sans-serif;
 }
 
 .latest-item {
-  height: 88px;
-  /* image should have 75x75px */
+  display: flex;
+  margin: 5px 0;
+}
+
+.latest-item-image {
+  width: 75px;
+  height: 75px;
+}
+
+.latest-item-content {
+  padding-left: 13px;
+}
+
+.latest-item-heading {
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.latest-item-author {
+  font-size: 1.1rem;
+  color: #aaa;
+  margin-top: 6px;
 }
 
 .section-heading {
-  font-size: 2.7rem;
+  font-size: 2.6rem;
   font-family: "Avalon", Helvetica, sans-serif;
   color: #f42;
   font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.section-heading:hover {
+  color: #000;
 }
 
 @media screen and (min-width: 768px) {
@@ -305,7 +334,7 @@ main {
 /* LATEST FUNDING SECTION */
 
 .latest-funding-section {
-  background-color: gray;
+  
 }
 
 .latest-funding-item {

@@ -398,6 +398,7 @@ main {
   background-color: #f42;
   color: #fff;
   line-height: 44px;
+  height: 44px;
   padding-left: 80px;
   font-size: 1.8rem;
   cursor: pointer;
@@ -459,10 +460,24 @@ main {
 @media screen and (min-width: 768px) {
   .latest-funding-nav {
     grid-column: span 3;
+    margin: -20px 0;
   }
 
-  .latest-funding-nav li {
-    display: inline;
+  .latest-funding-nav-list li{
+    display: inline-block;
+    border-left: 1px solid #f42;
+    padding: 1px 10px;
+  }
+
+  .latest-funding-nav-list li:nth-child(1) {
+    border: none;
+    padding-left: 0;
+  }
+
+  .funding-heading {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
   }
 }
 

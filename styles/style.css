@@ -234,14 +234,18 @@ main {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design7-796x417.png");
 }
 
-.cover-item h2 {
+.cover-item h2,
+.categories-articles-heading {
+  color: #fff;
   font-size: 1.3rem;
   font-family: "Shentox", Helvetica, sans-serif;
 }
 
-.cover-item h3 {
+.cover-item h3,
+.category-main-article h4 {
   font-size: 2.0rem;
   margin: 5px 0;
+  color: #fff;
   font-family: "Avalon", Helvetica, sans-serif;
 }
 
@@ -361,7 +365,7 @@ main {
 }
 
 .latest-funding-item {
-  height: 246px;
+  /* height: 246px; */
   background-color: #FFFAF8;
   color: #555;
   margin: 8px 0;
@@ -425,6 +429,7 @@ main {
 
 .funding-item-paragraph {
   padding: 16px;
+  font-size: 1.2rem;
   border-top: 1px solid rgba(255,68,34,.25);
 }
 
@@ -457,6 +462,13 @@ main {
 .categories-section {
   display: grid;
   background-color: rosybrown;
+}
+
+.category-main-article {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Snag_342b7512-368x276.png");
 }
 
 @media screen and (min-width: 768px) {

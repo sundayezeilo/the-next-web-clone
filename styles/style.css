@@ -214,22 +214,19 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   padding: 14px 12px;
 }
 
 .cover-main-item {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Copy-of-...-1-796x417.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Copy-of-...-1-796x417.png") center center / cover no-repeat;
 }
 
 .cover-second-item {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/TNW-Conference-PanelImg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/TNW-Conference-PanelImg.jpg") center center / cover no-repeat;
 }
 
 .cover-third-item {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design7-796x417.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design7-796x417.png") center center / cover no-repeat;
 }
 
 .cover-item h2,
@@ -263,6 +260,10 @@ main {
 
   .cover-main-item {
     grid-row: span 2;
+  }
+
+  .cover-main-item h3 {
+    font-size: 4rem;
   }
 }
 
@@ -302,7 +303,7 @@ main {
 .latest-item-heading {
   font-size: 1.4rem;
   color: #000;
-  line-height: 1.30;
+  line-height: 1.3;
 }
 
 .latest-item-author {
@@ -326,10 +327,29 @@ main {
 @media screen and (min-width: 768px) {
   .latest-grid {
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
   }
 
   .section-heading {
     grid-column: span 3;
+  }
+
+  .latest-news-heading {
+    margin-bottom: 0;
+  }
+
+  .latest-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .latest-item-image {
+    width: 100%;
+    height: 115px;
+  }
+
+  .latest-item-content {
+    padding-left: 0;
   }
 }
 
@@ -516,13 +536,12 @@ main {
   margin-bottom: 16px;
 }
 
-
 .categories-articles-lists li {
   padding: 8px 0;
   border-bottom: 1px solid #eee;
 }
 
-.categories-articles-lists a{
+.categories-articles-lists a {
   line-height: 1.5;
   font-size: 1.2rem;
   color: #555;
@@ -628,7 +647,7 @@ footer {
 .footer-legal-container span {
   display: block;
   text-align: center;
-  line-height: 1.50;
+  line-height: 1.5;
   font-size: 1.3rem;
   color: #aaa;
 }

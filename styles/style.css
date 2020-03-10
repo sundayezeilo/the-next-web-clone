@@ -508,7 +508,22 @@ main {
 }
 
 .categories-articles-lists {
+  color: #f42;
+  list-style-position: inside;
+  list-style-type: disc;
+}
 
+
+.categories-articles-lists li {
+  padding: 6px 0 6px 0;
+  border-bottom: 1px solid #555;
+}
+
+.categories-articles-lists a{
+  font-size: 1.3rem;
+  color: #555;
+  padding-left: 6px; 
+  font-family: "ARS Maquette", Helvetica, sans-serif;
 }
 
 @media screen and (min-width: 768px) {

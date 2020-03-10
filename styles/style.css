@@ -572,6 +572,7 @@ main {
 @media screen and (min-width: 768px) {
   .categories-section {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
   }
 }
 
@@ -613,9 +614,44 @@ main {
   color: #aaa;
 }
 
+@media screen and (min-width: 768px) {
+  .latest-item-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .latest-deals-item {
+    position: relative;
+  }
+
+  .sale-discount-box {
+    display: block;
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 80px;
+    width: 80px;
+  }
+
+  .sale-discount-box span {
+    position: relative;
+    top: 24px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    left: 8px;
+    text-align: center;
+    display: block;
+    transform: rotate(45deg);
+  }
+}
+
 /* FOOTER */
 
 footer {
+  margin-top: 40px;
   background-color: #000;
   color: #aaa;
   font-family: "ARS Maquette", Helvetica, sans-serif;

@@ -302,6 +302,7 @@ main {
 .latest-item-heading {
   font-size: 1.4rem;
   color: #000;
+  line-height: 1.30;
 }
 
 .latest-item-author {
@@ -479,13 +480,14 @@ main {
 .category-second-article {
   display: flex;
   justify-content: space-between;
-  margin-top: 4px;
+  margin-top: 2px;
   font-size: 0; /* Removing white space from anchor tag */
 }
 
 .second-article-content {
   padding: 10px 14px 0 14px;
   font-size: 1.4rem;
+  background-color: rgba(255, 68, 34, 0.06);
 }
 
 .category-second-article h3,
@@ -511,18 +513,19 @@ main {
   color: #f42;
   list-style-position: inside;
   list-style-type: disc;
+  margin-bottom: 16px;
 }
 
 
 .categories-articles-lists li {
-  padding: 6px 0 6px 0;
-  border-bottom: 1px solid #555;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
 }
 
 .categories-articles-lists a{
-  font-size: 1.3rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
   color: #555;
-  padding-left: 6px; 
   font-family: "ARS Maquette", Helvetica, sans-serif;
 }
 
@@ -543,10 +546,31 @@ main {
 .latest-deals-heading {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.all-deals-link {
+  color: #f42;
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-family: "ARS Maquette", Helvetica, sans-serif;
 }
 
 .sale-discount-box {
   display: none;
+}
+
+.latest-item-price {
+  margin-top: 6px;
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.latest-item-price span {
+  text-decoration: line-through;
+  font-size: 1.2rem;
+  color: #aaa;
 }
 
 /* FOOTER */

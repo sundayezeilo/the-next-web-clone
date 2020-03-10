@@ -52,11 +52,10 @@ nav {
 
 .logo-img {
   width: 106px;
-  background-color: #f42;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  background: #f42 linear-gradient(to bottom right, #c09, #f42 85%);
 }
 
 .logo-img img {
@@ -104,7 +103,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FFDE3E;
+  background-color: #ffde3e;
   text-decoration: none;
   color: #000;
   height: 60px;
@@ -218,7 +217,6 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  /* background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Snag_1094152b-796x407.png"); */
   padding: 14px 12px;
 }
 
@@ -243,7 +241,7 @@ main {
 
 .cover-item h3,
 .category-main-article h4 {
-  font-size: 2.0rem;
+  font-size: 2rem;
   margin: 5px 0;
   color: #fff;
   font-family: "Avalon", Helvetica, sans-serif;
@@ -276,7 +274,7 @@ main {
 
 /* LATEST NEWS SECTION AND LATEST DEALS SECTION GRID */
 
-.latest-news-section .section-heading {
+.latest-news-heading {
   margin-bottom: 24px;
 }
 
@@ -366,8 +364,7 @@ main {
 }
 
 .latest-funding-item {
-  /* height: 246px; */
-  background-color: #FFFAF8;
+  background-color: #fffaf8;
   color: #555;
   margin: 8px 0;
 }
@@ -386,7 +383,7 @@ main {
 }
 
 .funding-sub-heading {
-  background-color: rgba(255,68,34,.08);
+  background-color: rgba(255, 68, 34, 0.08);
   height: 60px;
   padding-left: 80px;
   font-size: 1.8rem;
@@ -403,7 +400,7 @@ main {
   margin-top: 4px;
   color: #777;
   font-family: "Shentox", Helvetica, sans-serif;
-} 
+}
 
 .latest-funding-item:last-child {
   display: none;
@@ -431,7 +428,7 @@ main {
 .funding-item-paragraph {
   padding: 16px;
   font-size: 1.2rem;
-  border-top: 1px solid rgba(255,68,34,.25);
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
 }
 
 .funding-item-paragraph span {
@@ -464,7 +461,6 @@ main {
   display: grid;
   padding: 0 20px;
   margin-top: 20px;
-
 }
 
 .category-main-article {
@@ -477,6 +473,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
+  margin-top: 14px;
 }
 
 .category-second-article {

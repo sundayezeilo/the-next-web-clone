@@ -249,7 +249,8 @@ main {
   font-family: "Avalon", Helvetica, sans-serif;
 }
 
-.cover-item p {
+.cover-item p,
+.category-main-article p {
   font-size: 1.2rem;
   font-family: "ARS Maquette", Helvetica, sans-serif;
   color: rgba(255, 255, 255, 0.6);
@@ -461,14 +462,56 @@ main {
 
 .categories-section {
   display: grid;
-  background-color: rosybrown;
+  padding: 0 20px;
+  margin-top: 20px;
+
 }
 
 .category-main-article {
-  background-repeat: no-repeat;
+  display: flex;
+  padding: 14px;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 60vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/image-6-368x276.png");
   background-size: cover;
-  background-position: center center;
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Snag_342b7512-368x276.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.category-second-article {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  font-size: 0; /* Removing white space from anchor tag */
+}
+
+.second-article-content {
+  padding: 10px 14px 0 14px;
+  font-size: 1.4rem;
+}
+
+.category-second-article h3,
+.category-second-article h4 {
+  color: #f42;
+}
+
+.category-second-article h3 {
+  font-weight: normal;
+}
+
+.category-second-article h4 {
+  font-family: "ARS Maquette", Helvetica, sans-serif;
+  line-height: 1.25;
+}
+
+.category-second-article img {
+  width: 96px;
+  height: 96px;
+}
+
+.categories-articles-lists {
+
 }
 
 @media screen and (min-width: 768px) {

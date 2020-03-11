@@ -281,14 +281,22 @@ main {
     position: relative;
   }
 
+  .cover-main-item h2,
+  .cover-main-item h3,
+  .cover-main-item p {
+    z-index: 2;
+  }
+
   .desktop-logo-gradient {
     display: block;
     width: 100%;
     height: 100%;
-    margin: -14px -12px;
+    top: 0;
+    margin: 0 -12px;
     position: absolute;
-    z-index: 0;
-    background:  linear-gradient(174deg, rgba(255,96,0,1) 0%, rgba(0,0,0,0.4192051820728291) 61%);
+    background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png") no-repeat;
+    background-size: cover;
+    mix-blend-mode: lighten;
   }
 
   .desktop-logo {
@@ -298,9 +306,7 @@ main {
     width: 50%;
     height: 100%;
     display: block;
-    z-index: 2;
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg");
-    background-repeat: no-repeat;
+    background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg") no-repeat;
     background-size: contain;
   }
 }

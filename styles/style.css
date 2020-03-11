@@ -215,6 +215,12 @@ main {
   flex-direction: column;
   justify-content: flex-end;
   padding: 14px 12px;
+  cursor: pointer;
+}
+
+.cover-item:hover {
+  box-shadow: inset 0 300px 100px 100px rgba(255, 255, 255, 0.1);
+  transition: 0.7s;
 }
 
 .desktop-logo,
@@ -223,15 +229,15 @@ main {
 }
 
 .cover-main-item {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Copy-of-...-1-796x417.png") center center / cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Copy-of-...-1-796x417.png") center center / cover no-repeat;
 }
 
 .cover-second-item {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/TNW-Conference-PanelImg.jpg") center center / cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/TNW-Conference-PanelImg.jpg") center center / cover no-repeat;
 }
 
 .cover-third-item {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design7-796x417.png") center center / cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design7-796x417.png") center center / cover no-repeat;
 }
 
 .cover-item h2,
@@ -342,6 +348,11 @@ main {
   font-size: 1.4rem;
   color: #000;
   line-height: 1.3;
+}
+
+.latest-item-heading:hover {
+  color: #f42;
+  text-decoration: underline;
 }
 
 .latest-item-author {
@@ -560,6 +571,7 @@ main {
   background-repeat: no-repeat;
   background-position: center bottom;
   margin-top: 14px;
+  cursor: pointer;
 }
 
 .category-second-article {
@@ -611,6 +623,10 @@ main {
   font-size: 1.2rem;
   color: #555;
   font-family: "ARS Maquette", Helvetica, sans-serif;
+}
+
+.categories-articles-lists a:hover {
+  color: #111;
 }
 
 @media screen and (min-width: 768px) {
@@ -723,7 +739,7 @@ footer {
   justify-content: center;
 }
 
-.round-icon-link a {
+.round-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -731,9 +747,14 @@ footer {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  border: 2px solid #333;
   color: #fff;
   background-color: #333;
   margin: 0 3px;
+}
+
+.round-icon:hover {
+  background-color: #131313;
 }
 
 .footer-text-link {
@@ -741,11 +762,15 @@ footer {
   justify-content: center;
 }
 
-.footer-text-link a {
+.text-link {
   margin: 0 4px;
   color: #aaa;
   font-size: 1.3rem;
   font-family: "Shentox", Helvetica, sans-serif;
+}
+
+.text-link:hover {
+  color: #eee;
 }
 
 .footer-legal-container {

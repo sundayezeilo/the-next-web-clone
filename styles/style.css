@@ -1,0 +1,812 @@
+@font-face {
+  font-family: "ARS Maquette";
+  src: url("../fonts/ARSMaquettePro.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ARS Maquette";
+  src: url("../fonts/ARSMaquettePro-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Shentox";
+  src: url("../fonts/Shentox.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Avalon";
+  src: url("../fonts/Avalon.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Avalon";
+  src: url("../fonts/Avalon_Bold.ttf");
+  font-weight: bold;
+}
+
+html {
+  font-size: 62.5%; /* Only for convenient using of rem similar to px (1.6rem = 16px) */
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 108px;
+  font-family: "ARS Maquette", Helvetica, sans-serif;
+  z-index: 10;
+}
+
+nav {
+  height: 48px;
+  display: grid;
+  grid-template-columns: 106px 1fr;
+}
+
+.logo-img {
+  width: 106px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f42 linear-gradient(to bottom right, #c09, #f42 85%);
+}
+
+.logo-img img {
+  width: 66px;
+  height: 16px;
+}
+
+.sub-nav {
+  display: none;
+}
+
+.main-nav {
+  background-color: #fcfcfc;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.main-nav-links {
+  display: none;
+}
+
+.main-nav-icons {
+  display: flex;
+  height: 48px;
+}
+
+.nav-icon {
+  width: 48px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #eee;
+  text-decoration: none;
+  color: #aaa;
+  font-size: 18px;
+}
+
+.menu-bar {
+  color: #f42;
+}
+
+.nav-ads {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffde3e;
+  text-decoration: none;
+  color: #000;
+  height: 60px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    height: 80px;
+  }
+
+  .logo-img {
+    grid-row: span 2;
+  }
+
+  .sub-nav {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0 20px 0 8px;
+    justify-content: space-between;
+    background-color: #131313;
+    height: 32px;
+  }
+
+  .sub-nav a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .left-sub-nav li,
+  .right-sub-nav li {
+    display: inline;
+    margin-left: 10px;
+  }
+
+  .main-nav {
+    justify-content: space-between;
+    font-size: 13px;
+    padding-left: 10px;
+    font-family: "Shentox", Helvetica, sans-serif;
+  }
+
+  .main-nav-links {
+    display: block;
+  }
+
+  .main-nav-links li {
+    display: inline;
+    padding: 0 10px;
+  }
+
+  .main-nav-links a {
+    text-decoration: none;
+    color: #aaa;
+  }
+
+  .main-nav-links .hidden-nav-link {
+    display: none;
+  }
+
+  .menu-bar {
+    display: none;
+  }
+
+  .nav-ads {
+    justify-content: flex-start;
+    height: 30px;
+    padding: 0 126px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-img {
+    display: none;
+  }
+
+  .main-nav-links .hidden-nav-link {
+    display: inline;
+  }
+
+  .nav-ads {
+    padding: 0 20px;
+  }
+}
+
+/* MAIN */
+main {
+  padding-top: 104px;
+}
+
+/* COVER SECTION */
+
+.cover-section {
+  height: calc(100vh - 108px);
+  display: grid;
+  grid-gap: 8px;
+  padding: 0 8px;
+  color: #fff;
+}
+
+.cover-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 14px 12px;
+  cursor: pointer;
+}
+
+.cover-item:hover {
+  box-shadow: inset 0 300px 100px 100px rgba(255, 255, 255, 0.1);
+  transition: 0.7s;
+}
+
+.desktop-logo,
+.desktop-logo-gradient {
+  display: none;
+}
+
+.cover-main-item {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Copy-of-...-1-796x417.png") center center / cover no-repeat;
+}
+
+.cover-second-item {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/TNW-Conference-PanelImg.jpg") center center / cover no-repeat;
+}
+
+.cover-third-item {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design7-796x417.png") center center / cover no-repeat;
+}
+
+.cover-item h2,
+.categories-articles-heading {
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: "Shentox", Helvetica, sans-serif;
+}
+
+.cover-item h3,
+.category-main-article h4 {
+  font-size: 2rem;
+  margin: 5px 0;
+  color: #fff;
+  font-family: "Avalon", Helvetica, sans-serif;
+}
+
+.cover-item p,
+.category-main-article p {
+  font-size: 1.2rem;
+  font-family: "ARS Maquette", Helvetica, sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .cover-section {
+    height: 60vh;
+    max-height: 560px;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .cover-main-item {
+    grid-row: span 2;
+  }
+
+  .cover-main-item h3 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cover-section {
+    height: 75vh;
+  }
+
+  .cover-main-item {
+    position: relative;
+  }
+
+  .cover-main-item h2,
+  .cover-main-item h3,
+  .cover-main-item p {
+    z-index: 2;
+  }
+
+  .desktop-logo-gradient {
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: 0 -12px;
+    position: absolute;
+    background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png") no-repeat;
+    background-size: cover;
+    mix-blend-mode: lighten;
+  }
+
+  .desktop-logo {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    width: 50%;
+    height: 100%;
+    display: block;
+    background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg") no-repeat;
+    background-size: contain;
+  }
+}
+
+/* LATEST NEWS SECTION AND LATEST DEALS SECTION GRID */
+
+.latest-news-heading {
+  margin-bottom: 24px;
+}
+
+.latest-grid {
+  display: grid;
+  padding: 0 20px;
+  margin-top: 20px;
+  font-family: "ARS Maquette", Helvetica, sans-serif;
+}
+
+.latest-item {
+  display: flex;
+  margin: 5px 0;
+}
+
+.latest-item-image {
+  width: 75px;
+  height: 75px;
+}
+
+.latest-item-content {
+  padding-left: 13px;
+}
+
+.latest-item-heading {
+  font-size: 1.4rem;
+  color: #000;
+  line-height: 1.3;
+}
+
+.latest-item-heading:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
+.latest-item-author {
+  font-size: 1.1rem;
+  color: #aaa;
+  margin-top: 6px;
+}
+
+.section-heading {
+  font-size: 2.6rem;
+  font-family: "Avalon", Helvetica, sans-serif;
+  color: #f42;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.section-heading:hover {
+  color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  .latest-grid {
+    grid-template-columns: repeat(3, minmax(30%, 1fr));
+    grid-gap: 20px;
+  }
+
+  .section-heading {
+    grid-column: span 3;
+  }
+
+  .latest-news-heading {
+    margin-bottom: 0;
+  }
+
+  .latest-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .latest-item-image {
+    width: 100%;
+    height: 115px;
+  }
+
+  .latest-item-content {
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .latest-grid {
+    grid-template-columns: repeat(4, minmax(22.5%, 1fr));
+    max-width: 1152px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-heading {
+    grid-column: span 4;
+  }
+}
+
+/* LATEST NEWS SECTION */
+
+/* LATEST FUNDING SECTION */
+
+.latest-funding-nav-list {
+  margin-bottom: 14px;
+}
+
+.latest-funding-nav-list li {
+  margin-top: 14px;
+}
+
+.funding-nav-link {
+  color: #f42;
+  font-size: 1.3rem;
+}
+
+.funding-nav-link:hover {
+  color: #000;
+}
+
+.latest-funding-item {
+  background-color: #fffaf8;
+  color: #555;
+  margin: 8px 0;
+}
+
+.funding-heading-container {
+  position: relative;
+}
+
+.funding-heading {
+  background-color: #f42;
+  color: #fff;
+  line-height: 44px;
+  height: 44px;
+  padding-left: 80px;
+  padding-right: 10px;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.funding-sub-heading {
+  background-color: rgba(255, 68, 34, 0.08);
+  height: 60px;
+  padding-left: 80px;
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.funding-serie {
+  font-size: 1.1rem;
+  margin-top: 4px;
+  color: #777;
+  font-family: "Shentox", Helvetica, sans-serif;
+}
+
+.latest-funding-item:last-child {
+  display: none;
+}
+
+.funding-image {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  position: absolute;
+}
+
+.funding-list {
+  padding: 16px;
+  font-size: 1.3rem;
+  line-height: 3rem;
+}
+
+.funding-list i {
+  font-size: 1.8rem;
+  color: #000;
+  padding-right: 8px;
+}
+
+.funding-item-paragraph {
+  padding: 16px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
+}
+
+.funding-item-paragraph span {
+  color: #aaa;
+}
+
+@media screen and (min-width: 768px) {
+  .latest-funding-nav {
+    grid-column: span 3;
+    margin: -20px 0;
+  }
+
+  .latest-funding-nav-list li {
+    display: inline-block;
+    border-left: 1px solid #f42;
+    padding: 1px 10px;
+  }
+
+  .latest-funding-nav-list li:nth-child(1) {
+    border: none;
+    padding-left: 0;
+  }
+
+  .latest-funding-item {
+    max-width: 100%;
+  }
+
+  .funding-heading {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .latest-funding-nav {
+    grid-column: span 4;
+  }
+
+  .latest-funding-item:last-child {
+    display: block;
+  }
+}
+
+/* CATEGORIES SECTION */
+
+.categories-section {
+  display: grid;
+  padding: 0 20px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1152px;
+}
+
+.category-main-article {
+  display: flex;
+  padding: 14px;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 60vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/image-6-368x276.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin-top: 14px;
+  cursor: pointer;
+}
+
+.category-second-article {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+  font-size: 0; /* Removing white space from anchor tag */
+}
+
+.second-article-content {
+  padding: 10px 14px 0 14px;
+  font-size: 1.4rem;
+  background-color: rgba(255, 68, 34, 0.06);
+}
+
+.category-second-article h3,
+.category-second-article h4 {
+  color: #f42;
+}
+
+.category-second-article h3 {
+  font-weight: normal;
+}
+
+.category-second-article h4 {
+  font-family: "ARS Maquette", Helvetica, sans-serif;
+  line-height: 1.25;
+}
+
+.category-second-article img {
+  width: 96px;
+  height: 96px;
+}
+
+.categories-articles-lists {
+  color: #f42;
+  list-style-position: inside;
+  list-style-type: disc;
+  margin-bottom: 16px;
+}
+
+.categories-articles-lists li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.categories-articles-lists a {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  color: #555;
+  font-family: "ARS Maquette", Helvetica, sans-serif;
+}
+
+.categories-articles-lists a:hover {
+  color: #111;
+}
+
+@media screen and (min-width: 768px) {
+  .categories-section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .category-main-article {
+    height: 35vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .categories-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .category-main-article {
+    height: 24vw;
+  }
+}
+
+/* LATEST DEALS SECTION */
+
+.latest-deals-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.all-deals-link {
+  color: #f42;
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-family: "ARS Maquette", Helvetica, sans-serif;
+}
+
+.sale-discount-box {
+  display: none;
+}
+
+.latest-item-price {
+  margin-top: 6px;
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.latest-item-price span {
+  text-decoration: line-through;
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+@media screen and (min-width: 768px) {
+  .latest-item-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .latest-deals-item {
+    position: relative;
+  }
+
+  .sale-discount-box {
+    display: block;
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 80px;
+    width: 80px;
+  }
+
+  .sale-discount-box span {
+    position: relative;
+    top: 24px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    left: 8px;
+    text-align: center;
+    display: block;
+    transform: rotate(45deg);
+  }
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 40px;
+  background-color: #000;
+  color: #aaa;
+  font-family: "ARS Maquette", Helvetica, sans-serif;
+}
+
+.footer-links {
+  background-color: #131313;
+  height: 161px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 35px 0;
+}
+
+.round-icon-link {
+  display: flex;
+  justify-content: center;
+}
+
+.round-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  color: #fff;
+  background-color: #333;
+  margin: 0 3px;
+}
+
+.round-icon:hover {
+  background-color: #131313;
+}
+
+.footer-text-link {
+  display: flex;
+  justify-content: center;
+}
+
+.text-link {
+  margin: 0 4px;
+  color: #aaa;
+  font-size: 1.3rem;
+  font-family: "Shentox", Helvetica, sans-serif;
+}
+
+.text-link:hover {
+  color: #eee;
+}
+
+.footer-legal-container {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.footer-legal-container span {
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.3rem;
+  color: #aaa;
+}
+
+.footer-legal-container b {
+  color: #f42;
+}
+
+.footer-tnw-logo {
+  width: 37px;
+  height: 9px;
+}
+
+.footer-stackpath-logo {
+  width: 65px;
+  height: 9px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-legal-container span {
+    display: inline-block;
+  }
+}
+
+.hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+}

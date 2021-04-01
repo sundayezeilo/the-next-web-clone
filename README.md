@@ -19,7 +19,7 @@
 
 ## Live Demo
 
-["The Next Web" Website Clone](https://raw.githack.com/ezeilo-su/the-next-web-clone/dev/index.html)
+["The Next Web" Website Clone](https://ezeilo-su.github.io/the-next-web-clone/)
 
 ## Authors
 
